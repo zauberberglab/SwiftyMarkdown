@@ -167,7 +167,7 @@ If that is not set, then the system default will be used.
 		LineRule(token: "\t1. ", type: MarkdownLineStyle.orderedListIndentFirstOrder, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: "1. ",type : MarkdownLineStyle.orderedList, removeFrom: .leading),
 		LineRule(token: "* ",type : MarkdownLineStyle.unorderedList, removeFrom: .leading),
-		LineRule(token: "    ", type: MarkdownLineStyle.codeblock, removeFrom: .leading, shouldTrim: false),
+		LineRule(token: "#c#", type: MarkdownLineStyle.codeblock, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: "\t", type: MarkdownLineStyle.codeblock, removeFrom: .leading, shouldTrim: false),
 		LineRule(token: ">",type : MarkdownLineStyle.blockquote, removeFrom: .leading),
 		LineRule(token: "###### ",type : MarkdownLineStyle.h6, removeFrom: .both),
