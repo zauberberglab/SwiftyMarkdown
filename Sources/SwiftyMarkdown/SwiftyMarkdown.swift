@@ -538,6 +538,9 @@ extension SwiftyMarkdown {
 			lineProperties = body
 		case .body:
 			lineProperties = body
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.firstLineHeadIndent = 20.0
+            attributes[.paragraphStyle] = paragraphStyle
 		case .referencedLink:
 			lineProperties = body
 		}
