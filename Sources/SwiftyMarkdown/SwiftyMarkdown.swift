@@ -424,7 +424,7 @@ If that is not set, then the system default will be used.
 		
 		for (idx, line) in referencesRemoved.enumerated() {
 			if idx > 0 {
-				attributedString.append(NSAttributedString(string: "\n"))
+				//attributedString.append(NSAttributedString(string: "\n"))
 			}
 			let finalTokens = self.tokeniser.process(line.line)
 			self.previouslyFoundTokens.append(contentsOf: finalTokens)
