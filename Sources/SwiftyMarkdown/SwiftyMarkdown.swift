@@ -137,6 +137,7 @@ If that is not set, then the system default will be used.
 	public var alignment: NSTextAlignment = .left
     public var lineSpacing : CGFloat = 0.0
     public var paragraphSpacing : CGFloat = 0.0
+    public var firstLineHeadIndent : CGFloat = 20.0
 }
 
 @objc open class LinkStyles : BasicStyles {
@@ -539,7 +540,7 @@ extension SwiftyMarkdown {
 		case .body:
 			lineProperties = body
             let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.firstLineHeadIndent = 20.0
+            paragraphStyle.firstLineHeadIndent = body.firstLineHeadIndent
             attributes[.paragraphStyle] = paragraphStyle
 		case .referencedLink:
 			lineProperties = body
